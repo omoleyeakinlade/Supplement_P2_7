@@ -22,6 +22,9 @@ pub fn f64_to_i64(f: f64) -> i64 {
     f.to_bits() as i64
 } 
 
+pub fn u64_to_f64(n: u64) -> f64 {
+    todo!("Not Implemented")
+}
 
 
 
