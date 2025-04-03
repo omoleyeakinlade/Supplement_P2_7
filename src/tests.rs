@@ -12,3 +12,10 @@ fn test_u32_to_f32_and_back() {
     let u2 = f32_to_u32(f);
     assert_eq!(u, u2);
 }
+#[test]
+fn test_i64_to_f64_and_back() {
+    let i: i64 = 922337203685477580;
+    let f = i64_to_f64(i);
+    let i2 = f64_to_i64(f);
+    assert_eq!(i, i2);
+}
