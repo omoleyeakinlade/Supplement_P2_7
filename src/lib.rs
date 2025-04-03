@@ -26,7 +26,7 @@ pub fn u64_to_f64(n: u64) -> f64 {
     f64::from_bits(n)
 }
 pub fn f64_to_u64(f: f64) -> u64 {
-    todo!("Not Implemented")
+    f.to_bits()
 }
 
 
