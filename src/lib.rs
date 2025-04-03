@@ -15,5 +15,5 @@ pub fn f32_to_u32(f: f32) -> u32 {
 } 
 
 pub fn i64_to_f64(n: i64) -> f64 {
-    todo!("Not Implemented")
+    f64::from_bits(n as u64)
 } 
