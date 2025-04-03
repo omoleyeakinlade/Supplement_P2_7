@@ -13,3 +13,7 @@ pub fn u32_to_f32(n: u32) -> f32 {
 pub fn f32_to_u32(f: f32) -> u32 {
     f.to_bits()
 } 
+
+pub fn i64_to_f64(n: i64) -> f64 {
+    todo!("Not Implemented")
+} 
