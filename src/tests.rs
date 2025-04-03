@@ -19,3 +19,11 @@ fn test_i64_to_f64_and_back() {
     let i2 = f64_to_i64(f);
     assert_eq!(i, i2);
 }
+#[test]
+fn test_u64_to_f64_and_back() {
+    let u: u64 = 4621819117588971520;
+    let f = u64_to_f64(u);
+    let u2 = f64_to_u64(f);
+    assert_eq!(u, u2);
+}
+
