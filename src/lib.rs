@@ -11,5 +11,5 @@ pub fn u32_to_f32(n: u32) -> f32 {
 }
 
 pub fn f32_to_u32(f: f32) -> u32 {
-    todo!("Not Implemented")
+    f.to_bits()
 } 
