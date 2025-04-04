@@ -1,3 +1,5 @@
+use number_converter::*;
+
 #[test]
 fn test_i32_to_f32_and_back() {
     let i: i32 = 1234567890;
