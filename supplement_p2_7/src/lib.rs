@@ -69,6 +69,14 @@ pub fn i64_to_f64(n: i64) -> f64 {
 pub fn f64_to_i64(f: f64) -> i64 {
     f.to_bits() as i64
 } 
+/// # Description 
+/// Reinterprets a 64-bit unsigned integer  as a 64-bit floating-point number
+///
+/// # Parameters
+/// - n: A 64-bit unsigned integer to reinterpret.
+///
+/// # Returns
+/// - A f64 with the same underlying 64-bit binary pattern as n.
 
 pub fn u64_to_f64(n: u64) -> f64 {
     f64::from_bits(n)
