@@ -57,7 +57,15 @@ pub fn f32_to_u32(f: f32) -> u32 {
 pub fn i64_to_f64(n: i64) -> f64 {
     f64::from_bits(n as u64)
 } 
-
+/// # Description 
+/// Reinterprets a 64-bit floating-point number as a 64-bit signed integer 
+/// using raw byte-level representation.
+///
+/// # Parameters
+/// - f: A 64-bit float to reinterpret.
+///
+/// # Returns
+/// - An i64 with the same underlying 64-bit binary pattern as f.
 pub fn f64_to_i64(f: f64) -> i64 {
     f.to_bits() as i64
 } 
