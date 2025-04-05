@@ -19,10 +19,28 @@ pub fn i32_to_f32(n: i32) -> f32 {
    pub fn f32_to_i32(f: f32) -> i32 {
     f.to_bits() as i32
 }
+/// # Description
+/// Reinterprets a 32-bit unsigned integer  as a 32-bit floating-point number 
+/// using raw byte-level representation.
+///
+/// # Parameters
+/// - n: A 32-bit unsigned integer to reinterpret.
+///
+/// # Returns
+/// - A f32 with the same underlying 32-bit binary pattern as n.
 
 pub fn u32_to_f32(n: u32) -> f32 {
     f32::from_bits(n)
 }
+/// # Description
+/// Reinterprets a 32-bit floating-point number  as a 32-bit unsigned integer 
+/// using raw byte-level representation.
+///
+/// # Parameters
+/// - f: A 32-bit float to reinterpret.
+///
+/// # Returns
+/// - A u32 with the same underlying 32-bit binary pattern as f.
 
 pub fn f32_to_u32(f: f32) -> u32 {
     f.to_bits()
