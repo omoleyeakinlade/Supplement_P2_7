@@ -1,0 +1,46 @@
+/// # Description
+/// Reinterprets a 32-bit signed integer as a 32-bit floating-point number
+///
+/// # Parameters
+/// - n: A 32-bit signed integer to reinterpret.
+///
+/// # Returns
+/// - A f32 with the same underlying 32-bit binary pattern as n.
+pub fn i32_to_f32(n: i32) -> f32 {
+    f32::from_bits(n as u32)
+   }
+/// # Description.
+/// Reinterprets a 32-bit floating-point number as a 32-bit signed integer 
+/// # Parameters.
+/// - f: A 32-bit float to reinterpret.
+///
+/// # Returns
+/// - An i32 with the same underlying 32-bit binary pattern as f.
+   pub fn f32_to_i32(f: f32) -> i32 {
+    f.to_bits() as i32
+}
+
+pub fn u32_to_f32(n: u32) -> f32 {
+    f32::from_bits(n)
+}
+
+pub fn f32_to_u32(f: f32) -> u32 {
+    f.to_bits()
+} 
+
+pub fn i64_to_f64(n: i64) -> f64 {
+    f64::from_bits(n as u64)
+} 
+
+pub fn f64_to_i64(f: f64) -> i64 {
+    f.to_bits() as i64
+} 
+
+pub fn u64_to_f64(n: u64) -> f64 {
+    f64::from_bits(n)
+}
+pub fn f64_to_u64(f: f64) -> u64 {
+    f.to_bits()
+}
+
+
